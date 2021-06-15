@@ -1,5 +1,8 @@
 package com.example.demo.student;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Student {
 
     private final Integer studentId;
@@ -17,5 +20,10 @@ public class Student {
 
     public String getStudentName() {
         return studentName;
+    }
+
+    @Override
+    public String toString() {
+        return studentId + " " + studentName;
     }
 }
